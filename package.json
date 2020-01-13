@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "https://hemangi.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,15 +11,33 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+  "devDependencies": {
+		"@commitlint/cli": "^8.1.0",
+		"@commitlint/config-conventional": "^8.1.0",
+		"@commitlint/prompt-cli": "^8.1.0",
+		"@testing-library/jest-dom": "^4.1.0",
+		"@testing-library/react": "^9.2.0",
+		"babel-jest": "^24.9.0",
+		"gh-pages": "^2.1.1",
+		"husky": "^3.0.4",
+		"jest-styled-components": "^6.3.3",
+		"prettier": "^1.18.2",
+		"pretty-quick": "^1.11.1"
+	},
+ "scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "set CI=true&&react-scripts test",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
+		"eject": "react-scripts eject",
+		"tdd": "react-scripts test",
+		"commit": "commit"
+	},
   "eslintConfig": {
     "extends": "react-app"
   },
+  "license": "ISC",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -31,4 +50,8 @@
       "last 1 safari version"
     ]
   }
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/hemangi/hemangi.github.io"
+	}
 }
