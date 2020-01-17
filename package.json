@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://hemangi.github.io/",
+  "homepage": "https://hemangi.github.io/portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,28 +12,28 @@
     "react-scripts": "3.3.0"
   },
   "devDependencies": {
-		"@commitlint/cli": "^8.1.0",
-		"@commitlint/config-conventional": "^8.1.0",
-		"@commitlint/prompt-cli": "^8.1.0",
-		"@testing-library/jest-dom": "^4.1.0",
-		"@testing-library/react": "^9.2.0",
-		"babel-jest": "^24.9.0",
-		"gh-pages": "^2.1.1",
-		"husky": "^3.0.4",
-		"jest-styled-components": "^6.3.3",
-		"prettier": "^1.18.2",
-		"pretty-quick": "^1.11.1"
-	},
- "scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "set CI=true&&react-scripts test",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
-		"eject": "react-scripts eject",
-		"tdd": "react-scripts test",
-		"commit": "commit"
-	},
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@commitlint/prompt-cli": "^8.1.0",
+    "@testing-library/jest-dom": "^4.1.0",
+    "@testing-library/react": "^9.2.0",
+    "babel-jest": "^24.9.0",
+    "gh-pages": "^2.2.0",
+    "husky": "^3.0.4",
+    "jest-styled-components": "^6.3.3",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "set CI=true&&react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject",
+    "tdd": "react-scripts test",
+    "commit": "commit"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -51,7 +51,7 @@
     ]
   },
   "repository": {
-		"type": "git",
-		"url": "https://github.com/hemangi/hemangi.github.io"
-	}
+    "type": "git",
+    "url": "https://github.com/hemangi/hemangi.github.io"
+  }
 }
